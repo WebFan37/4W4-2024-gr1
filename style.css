@@ -1,0 +1,66 @@
+/* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ */
+/*
+Theme Name: Theme for cute Janne
+Author: Janne Zhang Ellison
+Author URI: https://wordpress.org/
+Description: Theme de base  
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.3
+Requires at least: 5.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme for cute Janne
+*/
+:root {
+  --couleur--arrier-entete:#94d4f8;
+  --couleur--arrier-accueil:rgb(43, 99, 43);
+  --couleur--arrier-evenement:#034;
+  --couleur--arrier-galerie:#583;
+  --couleur--arrier-footer:rgb(250, 226, 146);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.global {
+  min-height: 100vh;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  flex: 0 1 1100px;
+  border: 1px solid grey;
+}
+
+#entete {
+  background-color: var(--couleur--arrier-entete);
+}
+
+#accueil {
+  background-color: var(--couleur--arrier-accueil);
+}
+
+#evenement {
+  background-color: var(--couleur--arrier-evenement);
+}
+
+#galerie {
+  background-color: var(--couleur--arrier-galerie);
+}
+
+#footer {
+  background-color: var(--couleur--arrier-footer);
+}
+
+h1 {
+  font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+}/*# sourceMappingURL=style.css.map */

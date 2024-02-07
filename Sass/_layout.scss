@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.global{
+    min-height: 100vh;
+}
+.global > section,
+.global > header,
+.global > footer{
+    flex: 0 1 1100px;
+    border: 1px solid grey;
+}
+
+#entete{
+background-color: var(--couleur--arrier-entete);
+}
+#accueil{
+background-color: var(--couleur--arrier-accueil);
+}
+#evenement{
+    background-color: var(--couleur--arrier-evenement);
+}
+#galerie{
+    background-color: var(--couleur--arrier-galerie);
+}
+#footer{
+    background-color: var(--couleur--arrier-footer);
+}
