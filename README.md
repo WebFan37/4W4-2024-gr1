@@ -1,5 +1,6 @@
 Testing for README FILE
-
+# Labo 01
+# Introduction to Sass & HTML/CSS revision
 
 SASS: the underscore is to prevent a file to not translate into the one single file
 -- Useful branch changing terminal command:
