@@ -15,10 +15,14 @@ body{
 .global > section,
 .global > header,
 .global > footer{
-    flex: 0 1 900px;
-    border: 1px solid grey;
+    flex: 0 1 800px;
+    // border: 1px solid grey;
+    padding: 3rem 1rem;
+    background-color: rgba(255, 255, 255, 0.25);
 }
-
+#entete, #footer{
+    min-height: 10vh;
+}
 #entete{
 background-color: var(--couleur--arrier-entete);
 }
