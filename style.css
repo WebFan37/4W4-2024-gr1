@@ -44,6 +44,7 @@ body {
   flex: 0 1 800px;
   padding: 3rem 1rem;
   background-color: rgba(62, 153, 161, 0.25);
+  border-radius: 15px;
 }
 
 #entete, #footer {
@@ -88,6 +89,7 @@ h3 {
   font-family: "Inter", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Work Sans", sans-serif;
+  color: rgb(255, 0, 255, var(--transparence--section));
 }
 
 h4 {
@@ -95,6 +97,7 @@ h4 {
   font-family: "Inter", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Work Sans", sans-serif;
+  color: rgb(255, 0, 255, var(--transparence--section));
 }
 
 h5 {
@@ -102,6 +105,7 @@ h5 {
   font-family: "Inter", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Work Sans", sans-serif;
+  color: rgb(255, 0, 255, var(--transparence--section));
 }
 
 h6 {
@@ -109,4 +113,5 @@ h6 {
   font-family: "Inter", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Work Sans", sans-serif;
+  color: rgb(255, 0, 255, var(--transparence--section));
 }/*# sourceMappingURL=style.css.map */
