@@ -12,11 +12,6 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme for cute Janne
 */
-/****************************************************
- * THE PREVIOUS PART IS FOR THE DESCRIPTION OF THE THEME
- FOR WORDPRESS 
- ****************************************************/
-
 :root {
   --couleur--arrier-entete:#94d4f8;
   --couleur--arrier-accueil:rgb(43, 99, 43);
@@ -36,13 +31,15 @@ body {
 }
 
 .global {
-  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 900px;
   border: 1px solid grey;
 }
 
@@ -68,4 +65,14 @@ body {
 
 h1 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
+  font-family: "Inter", sans-serif;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+
+h3 {
+  font-family: "Work Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
