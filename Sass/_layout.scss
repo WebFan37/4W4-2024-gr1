@@ -26,16 +26,21 @@ body{
 }
 #entete{
 background-color: var(--couleur--arrier-entete);
+color: var(--couleur--entete);
 }
 #accueil{
 background-color: var(--couleur--arrier-accueil);
+color: var(--couleur--accueil);
 }
 #evenement{
     background-color: var(--couleur--arrier-evenement);
+    color: var(--couleur--evenement);
 }
 #galerie{
     background-color: var(--couleur--arrier-galerie);
+    color: var(--couleur--galerie);
 }
 #footer{
     background-color: var(--couleur--arrier-footer);
+    color: var(--couleur--footer);
 }

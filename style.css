@@ -13,13 +13,40 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: theme for cute Janne
 */
 :root {
-  --couleur--arrier-entete:#94d4f8;
-  --couleur--arrier-accueil:rgb(170, 238, 170);
-  --couleur--arrier-evenement:rgb(94, 215, 255);
-  --couleur--arrier-galerie:rgb(220, 205, 255);
-  --couleur--arrier-footer:rgb(250, 226, 146);
-  --transparence--section: 0.2;
-  --transparence--h1:0.4;
+  /* --couleur--arrier-entete:#94d4f8;
+   --couleur--arrier-accueil:rgb(170, 238, 170);
+   --couleur--arrier-evenement:rgb(94, 215, 255);
+   --couleur--arrier-galerie:rgb(220, 205, 255);
+   --couleur--arrier-footer:rgb(250, 226, 146);
+
+   --transparence--section: 0.2;
+   --transparence--h1:0.4;
+   */
+  /*=== 2nd option====*/
+  /*==================*/
+  /* Teinte*/
+  --u1: 180;
+  --u2: calc(var(--u1) + 180);
+  --u3: calc(var(--u2) - 30);
+  --u4: calc(var(--u2) + 30);
+  /*SAturation*/
+  --s--arriere: 100%;
+  --s-avant: 50%;
+  /*luminosite*/
+  --l-arriere:30%;
+  --l-avant:20%;
+  /* couleur arriere plan --background color--*/
+  --couleur--arrier-entete:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-accueil:hsl(var(--u2), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-evenement:hsl(var(--u3), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-galerie: hsl(var(--u4), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-footer:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
+  /* couleur avant plan --color-- */
+  --couleur--entete:hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur--accueil:hsl(var(--u2), var(--s-avant), var(--l-avant));
+  --couleur--evenement:hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur--galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur--footer:hsl(var(--u1), var(--s-avant), var(--l-avant));
 }
 
 * {
@@ -53,22 +80,27 @@ body {
 
 #entete {
   background-color: var(--couleur--arrier-entete);
+  color: var(--couleur--entete);
 }
 
 #accueil {
   background-color: var(--couleur--arrier-accueil);
+  color: var(--couleur--accueil);
 }
 
 #evenement {
   background-color: var(--couleur--arrier-evenement);
+  color: var(--couleur--evenement);
 }
 
 #galerie {
   background-color: var(--couleur--arrier-galerie);
+  color: var(--couleur--galerie);
 }
 
 #footer {
   background-color: var(--couleur--arrier-footer);
+  color: var(--couleur--footer);
 }
 
 h1 {
