@@ -1,6 +1,7 @@
 Testing for README FILE
 # Labo 02
 # Utilisation de la fonction HSL()
+- https://blog.logrocket.com/using-hsl-colors-css/
 ## Integration d'effet vague et diagonal
 
 
@@ -10,7 +11,11 @@ Testing for README FILE
  - https://css-tricks.com/creating-color-themes-with-custom-properties-hsl-and-a-little-calc/
  - https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control/
 ## Utiliser fonction HSL
-### Integre les vagues et diagonal
+## Integre les vagues et diagonal
+## color palette avec HSL
+- https://blog.logrocket.com/building-color-palette-css/
+## color palette circle
+- https://color.adobe.com/fr/create/color-wheel
 
 SASS: the underscore is to prevent a file to not translate into the one single file
 -- Useful branch changing terminal command:
