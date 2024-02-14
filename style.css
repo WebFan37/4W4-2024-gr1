@@ -25,7 +25,7 @@ Text Domain: theme for cute Janne
   /*=== 2nd option====*/
   /*==================*/
   /* Teinte*/
-  --u1: 180;
+  --u1: 10;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -33,8 +33,8 @@ Text Domain: theme for cute Janne
   --s--arriere: 100%;
   --s-avant: 50%;
   /*luminosite*/
-  --l-arriere:30%;
-  --l-avant:20%;
+  --l-arriere:40%;
+  --l-avant:100%;
   /* couleur arriere plan --background color--*/
   --couleur--arrier-entete:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
   --couleur--arrier-accueil:hsl(var(--u2), var(--s--arriere), var(--l-arriere));
@@ -81,6 +81,7 @@ body {
 #entete {
   background-color: var(--couleur--arrier-entete);
   color: var(--couleur--entete);
+  position: relative;
 }
 
 #accueil {
@@ -146,4 +147,25 @@ h6 {
   font-family: "Nunito", sans-serif;
   font-family: "Work Sans", sans-serif;
   color: rgb(255, 0, 255, var(--transparence--section));
+}
+
+.vague {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 75px;
+}
+
+.vague .shape-fill {
+  fill: var(--couleur--arrier-accueil);
 }/*# sourceMappingURL=style.css.map */
