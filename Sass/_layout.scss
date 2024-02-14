@@ -32,10 +32,12 @@ position: relative;
 #accueil{
 background-color: var(--couleur--arrier-accueil);
 color: var(--couleur--accueil);
+position: relative;
 }
 #evenement{
     background-color: var(--couleur--arrier-evenement);
     color: var(--couleur--evenement);
+    position: relative;
 }
 #galerie{
     background-color: var(--couleur--arrier-galerie);
@@ -44,4 +46,5 @@ color: var(--couleur--accueil);
 #footer{
     background-color: var(--couleur--arrier-footer);
     color: var(--couleur--footer);
+    position: relative;
 }

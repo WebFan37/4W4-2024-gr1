@@ -87,11 +87,13 @@ body {
 #accueil {
   background-color: var(--couleur--arrier-accueil);
   color: var(--couleur--accueil);
+  position: relative;
 }
 
 #evenement {
   background-color: var(--couleur--arrier-evenement);
   color: var(--couleur--evenement);
+  position: relative;
 }
 
 #galerie {
@@ -102,6 +104,7 @@ body {
 #footer {
   background-color: var(--couleur--arrier-footer);
   color: var(--couleur--footer);
+  position: relative;
 }
 
 h1 {
@@ -168,4 +171,66 @@ h6 {
 
 .vague .shape-fill {
   fill: var(--couleur--arrier-accueil);
+}
+
+.vague2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague2 svg {
+  position: relative;
+  display: block;
+  width: calc(158% + 1.3px);
+  height: 55px;
+}
+
+.vague2 .shape-fill {
+  fill: var(--couleur--arrier-evenement);
+}
+
+.vague3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague3 svg {
+  position: relative;
+  display: block;
+  width: calc(133% + 1.3px);
+  height: 164px;
+}
+
+.vague3 .shape-fill {
+  fill: var(--couleur--arrier-galerie);
+}
+
+.curve1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve1 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 37px;
+}
+
+.curve1 .shape-fill {
+  fill: var(--couleur--arrier-galerie);
 }/*# sourceMappingURL=style.css.map */
