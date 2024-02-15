@@ -4,6 +4,8 @@ Testing for README FILE
 - https://blog.logrocket.com/using-hsl-colors-css/
 ## Integration d'effet vague et diagonal
 
+## GitHub Pages
+https://webfan37.github.io/4W4-2024-gr1/
 
 ## Reference
 - référence hsl()
