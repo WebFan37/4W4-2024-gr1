@@ -10,7 +10,7 @@ body{
 .global{
     display: flex;
     justify-content: center;
-    min-height: 40vh;
+    min-height: 20vh;
 }
 .global > section,
 .global > header,
@@ -18,11 +18,11 @@ body{
     flex: 0 1 800px;
     // border: 1px solid grey;
     padding: 3rem 1rem;
-    background-color: rgba(62, 153, 161, 0.25);
+    // background-color: rgba(62, 153, 161, 0.25);
     border-radius: 15px;
 }
 #entete, #footer{
-    min-height: 7vh;
+    min-height: 10vh;
 }
 #entete{
 background-color: var(--couleur--arrier-entete);
@@ -33,15 +33,19 @@ position: relative;
 background-color: var(--couleur--arrier-accueil);
 color: var(--couleur--accueil);
 position: relative;
+min-height: 40vh;
 }
 #evenement{
     background-color: var(--couleur--arrier-evenement);
     color: var(--couleur--evenement);
     position: relative;
+    z-index: 1;
+    min-height: 40vh;
 }
 #galerie{
     background-color: var(--couleur--arrier-galerie);
     color: var(--couleur--galerie);
+    min-height: 40vh;
 }
 #footer{
     background-color: var(--couleur--arrier-footer);

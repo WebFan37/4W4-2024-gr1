@@ -20,47 +20,47 @@
 }
 
 
-.vague2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
+// .vague2 {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     overflow: hidden;
+//     line-height: 0;
+//     transform: rotate(180deg);
+// }
 
-.vague2 svg {
-    position: relative;
-    display: block;
-    width: calc(158% + 1.3px);
-    height: 55px;
-}
+// .vague2 svg {
+//     position: relative;
+//     display: block;
+//     width: calc(158% + 1.3px);
+//     height: 55px;
+// }
 
-.vague2 .shape-fill {
-    fill: var(--couleur--arrier-evenement);
-}
+// .vague2 .shape-fill {
+//     fill: var(--couleur--arrier-evenement);
+// }
 
-.vague3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
+// .vague3 {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     overflow: hidden;
+//     line-height: 0;
+//     transform: rotate(180deg);
+// }
 
-.vague3 svg {
-    position: relative;
-    display: block;
-    width: calc(133% + 1.3px);
-    height: 164px;
-}
+// .vague3 svg {
+//     position: relative;
+//     display: block;
+//     width: calc(133% + 1.3px);
+//     height: 164px;
+// }
 
-.vague3 .shape-fill {
-    fill: var(--couleur--arrier-galerie);
-}
+// .vague3 .shape-fill {
+//     fill: var(--couleur--arrier-galerie);
+// }
 
 .curve1 {
     position: absolute;

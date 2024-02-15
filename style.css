@@ -25,7 +25,7 @@ Text Domain: theme for cute Janne
   /*=== 2nd option====*/
   /*==================*/
   /* Teinte*/
-  --u1: 10;
+  --u1: 182;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
@@ -34,19 +34,22 @@ Text Domain: theme for cute Janne
   --s-avant: 50%;
   /*luminosite*/
   --l-arriere:40%;
-  --l-avant:100%;
+  --l-avant:84%;
   /* couleur arriere plan --background color--*/
-  --couleur--arrier-entete:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-accueil:hsl(var(--u2), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-evenement:hsl(var(--u3), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-galerie: hsl(var(--u4), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-footer:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
+  /***********************Couleur 180 degree*/
   /* couleur avant plan --color-- */
   --couleur--entete:hsl(var(--u1), var(--s-avant), var(--l-avant));
   --couleur--accueil:hsl(var(--u2), var(--s-avant), var(--l-avant));
   --couleur--evenement:hsl(var(--u3), var(--s-avant), var(--l-avant));
   --couleur--galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
   --couleur--footer:hsl(var(--u1), var(--s-avant), var(--l-avant));
+  /*---couleur monochrome arriere plan****/
+  --couleur--arrier-entete:hsl(var(--u1), 100%, 30%);
+  --couleur--arrier-accueil:hsl(var(--u1), 100%, 25%);
+  --couleur--arrier-footer:hsl(var(--u1), 100%, 30%);
+  /*couleur evenement setup pour le diagonal*/
+  --couleur--arrier-evenement: var(--couleur--arrier-accueil);
+  --couleur--arrier-galerie: var(--couleur--arrier-accueil);
 }
 
 * {
@@ -62,7 +65,7 @@ body {
 .global {
   display: flex;
   justify-content: center;
-  min-height: 40vh;
+  min-height: 20vh;
 }
 
 .global > section,
@@ -70,12 +73,11 @@ body {
 .global > footer {
   flex: 0 1 800px;
   padding: 3rem 1rem;
-  background-color: rgba(62, 153, 161, 0.25);
   border-radius: 15px;
 }
 
 #entete, #footer {
-  min-height: 7vh;
+  min-height: 10vh;
 }
 
 #entete {
@@ -88,17 +90,21 @@ body {
   background-color: var(--couleur--arrier-accueil);
   color: var(--couleur--accueil);
   position: relative;
+  min-height: 40vh;
 }
 
 #evenement {
   background-color: var(--couleur--arrier-evenement);
   color: var(--couleur--evenement);
   position: relative;
+  z-index: 1;
+  min-height: 40vh;
 }
 
 #galerie {
   background-color: var(--couleur--arrier-galerie);
   color: var(--couleur--galerie);
+  min-height: 40vh;
 }
 
 #footer {
@@ -111,6 +117,7 @@ h1 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-family: "Work Sans", sans-serif;
   color: rgba(255, 0, 0, var(--transparence--h1));
+  letter-spacing: 4px;
 }
 
 h2 {
@@ -173,48 +180,6 @@ h6 {
   fill: var(--couleur--arrier-accueil);
 }
 
-.vague2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.vague2 svg {
-  position: relative;
-  display: block;
-  width: calc(158% + 1.3px);
-  height: 55px;
-}
-
-.vague2 .shape-fill {
-  fill: var(--couleur--arrier-evenement);
-}
-
-.vague3 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.vague3 svg {
-  position: relative;
-  display: block;
-  width: calc(133% + 1.3px);
-  height: 164px;
-}
-
-.vague3 .shape-fill {
-  fill: var(--couleur--arrier-galerie);
-}
-
 .curve1 {
   position: absolute;
   top: 0;
@@ -233,4 +198,19 @@ h6 {
 
 .curve1 .shape-fill {
   fill: var(--couleur--arrier-galerie);
+}
+
+.digonal {
+  position: relative;
+  isolation: isolate;
+  min-height: 4vh;
+}
+
+.diagonal::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: var(--couleur--arrier-entete);
+  z-index: -1;
+  transform: skewY(-4deg);
 }/*# sourceMappingURL=style.css.map */
