@@ -138,6 +138,10 @@ button:hover {
   position: relative;
 }
 
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
 h1 {
   font-size: clamp(1rem, -1.292rem + 7.333vw, 3.75rem);
   font-family: "Work Sans", sans-serif;
