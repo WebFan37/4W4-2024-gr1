@@ -12,27 +12,27 @@
     /*=== 2nd option====*/
     /*==================*/
     /* Teinte*/
-    --u1: 182; //couleur inititale
+    --u1: 82; //couleur inititale
     --u2: calc(var(--u1) + 180); //couleur complementaire
     --u3: calc(var(--u2) - 30); //couleur analogue gauche
     --u4: calc(var(--u2) + 30); //couleur analogue droite
 
     /*SAturation*/
-    --s--arriere: 100%;
+    --s--arriere: 70%;
     --s-avant: 50%;
 
     /*luminosite*/
-    --l-arriere:40%;
-    --l-avant:84%;
+    --l-arriere:30%;
+    --l-avant:80%;
 
 
     /* couleur arriere plan --background color--*/
     /***********************Couleur 180 degree*/
-    // --couleur--arrier-entete:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
-    // --couleur--arrier-accueil:hsl(var(--u2), var(--s--arriere), var(--l-arriere));
+    --couleur--arrier-entete:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
+    --couleur--arrier-accueil:hsl(var(--u2), var(--s--arriere), var(--l-arriere));
     // --couleur--arrier-evenement:hsl(var(--u3), var(--s--arriere), var(--l-arriere));
     // --couleur--arrier-galerie: hsl(var(--u4), var(--s--arriere), var(--l-arriere));
-    // --couleur--arrier-footer:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
+    --couleur--arrier-footer:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
 
    /* couleur avant plan --color-- */
    --couleur--entete:hsl(var(--u1), var(--s-avant), var(--l-avant));
@@ -44,11 +44,11 @@
     
 
     /*---couleur monochrome arriere plan****/
-    --couleur--arrier-entete:hsl(var(--u1), 100%, 30%);
-    --couleur--arrier-accueil:hsl(var(--u1), 100%, 25%);
+    // --couleur--arrier-entete:hsl(var(--u1), 100%, 30%);
+    // --couleur--arrier-accueil:hsl(var(--u1), 100%, 25%);
     // --couleur--arrier-evenement:hsl(var(--u1), 100%, 20%);
     // --couleur--arrier-galerie: hsl(var(--u1), 100%, 15%);
-    --couleur--arrier-footer:hsl(var(--u1), 100%, 30%);
+    // --couleur--arrier-footer:hsl(var(--u1), 100%, 30%);
 
     /*couleur evenement setup pour le diagonal*/
     --couleur--arrier-evenement : var(--couleur--arrier-accueil);

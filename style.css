@@ -25,18 +25,21 @@ Text Domain: theme for cute Janne
   /*=== 2nd option====*/
   /*==================*/
   /* Teinte*/
-  --u1: 182;
+  --u1: 82;
   --u2: calc(var(--u1) + 180);
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
   /*SAturation*/
-  --s--arriere: 100%;
+  --s--arriere: 70%;
   --s-avant: 50%;
   /*luminosite*/
-  --l-arriere:40%;
-  --l-avant:84%;
+  --l-arriere:30%;
+  --l-avant:80%;
   /* couleur arriere plan --background color--*/
   /***********************Couleur 180 degree*/
+  --couleur--arrier-entete:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-accueil:hsl(var(--u2), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-footer:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
   /* couleur avant plan --color-- */
   --couleur--entete:hsl(var(--u1), var(--s-avant), var(--l-avant));
   --couleur--accueil:hsl(var(--u2), var(--s-avant), var(--l-avant));
@@ -44,9 +47,6 @@ Text Domain: theme for cute Janne
   --couleur--galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
   --couleur--footer:hsl(var(--u1), var(--s-avant), var(--l-avant));
   /*---couleur monochrome arriere plan****/
-  --couleur--arrier-entete:hsl(var(--u1), 100%, 30%);
-  --couleur--arrier-accueil:hsl(var(--u1), 100%, 25%);
-  --couleur--arrier-footer:hsl(var(--u1), 100%, 30%);
   /*couleur evenement setup pour le diagonal*/
   --couleur--arrier-evenement: var(--couleur--arrier-accueil);
   --couleur--arrier-galerie: var(--couleur--arrier-accueil);
@@ -68,12 +68,36 @@ body {
   min-height: 20vh;
 }
 
+a {
+  color: yellow;
+}
+
+a:hover {
+  color: rgb(160, 193, 250);
+}
+
 .global > section,
 .global > header,
 .global > footer {
   flex: 0 1 800px;
   padding: 3rem 1rem;
   border-radius: 15px;
+}
+
+button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: var(--couleur--arrier-entete);
+  color: var(--couleur--arrier-galerie);
 }
 
 #entete, #footer {
@@ -105,6 +129,7 @@ body {
   background-color: var(--couleur--arrier-galerie);
   color: var(--couleur--galerie);
   min-height: 40vh;
+  position: relative;
 }
 
 #footer {
