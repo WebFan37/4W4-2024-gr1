@@ -21,26 +21,27 @@ Text Domain: theme for cute Janne
   --u3: calc(var(--u2) - 30);
   --u4: calc(var(--u2) + 30);
   /* TEINTE TRIADE */
-  --t1: 30;
+  --t1: 163;
   --t2: calcl(var(--t1) + 120);
   --t3: calcl(var(--t1) - 120);
+  /*==================*/
   /*SAturation*/
   --s--arriere: 70%;
-  --s-avant: 50%;
+  --s-avant: 30%;
   /*luminosite*/
   --l-arriere:30%;
   --l-avant:80%;
   /* couleur arriere plan --background color--*/
   /***********************Couleur 180 degree*/
-  --couleur--arrier-entete:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-accueil:hsl(var(--u2), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-footer:hsl(var(--u1), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-entete:hsl(var(--t1), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-accueil:hsl(var(--t2), var(--s--arriere), var(--l-arriere));
+  --couleur--arrier-footer:hsl(var(--t1), var(--s--arriere), var(--l-arriere));
   /* couleur avant plan --color-- */
-  --couleur--entete:hsl(var(--u1), var(--s-avant), var(--l-avant));
-  --couleur--accueil:hsl(var(--u2), var(--s-avant), var(--l-avant));
-  --couleur--evenement:hsl(var(--u3), var(--s-avant), var(--l-avant));
+  --couleur--entete:hsl(var(--t1), var(--s-avant), var(--l-avant));
+  --couleur--accueil:hsl(var(--t2), var(--s-avant), var(--l-avant));
+  --couleur--evenement:hsl(var(--t3), var(--s-avant), var(--l-avant));
   --couleur--galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
-  --couleur--footer:hsl(var(--u1), var(--s-avant), var(--l-avant));
+  --couleur--footer:hsl(var(--t1), var(--s-avant), var(--l-avant));
   /*---couleur monochrome arriere plan****/
   /*couleur evenement setup pour le diagonal*/
   --couleur--arrier-evenement: var(--couleur--arrier-accueil);
