@@ -1,15 +1,16 @@
 :root {
     /*==================*/
     /* TEINTE COMPLÉMENTAIRE PARTAGÉ */
-    --u1: 82; //couleur inititale
-    --u2: calc(var(--u1) + 180); //couleur complementaire
-    --u3: calc(var(--u2) - 30); //couleur analogue gauche
-    --u4: calc(var(--u2) + 30); //couleur analogue droite
+    //--u1: 82; //couleur inititale
+    //--u2: calc(var(--u1) + 180); //couleur complementaire
+    //--u3: calc(var(--u2) - 30); //couleur analogue gauche
+    //--u4: calc(var(--u2) + 30); //couleur analogue droite
 
     /* TEINTE TRIADE */
-    --t1: 163;
-    --t2: calcl(var(--t1) + 120);
-    --t3: calcl(var(--t1) - 120);
+    --t1: 220;
+    --t2: calc(var(--t1) + 120);
+    --t3: calc(var(--t1) - 120);
+    --t4: calc(var(--t1) + 60);
 
 
     /*==================*/
@@ -35,7 +36,7 @@
    --couleur--entete:hsl(var(--t1), var(--s-avant), var(--l-avant));
     --couleur--accueil:hsl(var(--t2), var(--s-avant), var(--l-avant));
     --couleur--evenement:hsl(var(--t3), var(--s-avant), var(--l-avant));
-    --couleur--galerie: hsl(var(--u4), var(--s-avant), var(--l-avant)); 
+    --couleur--galerie: hsl(var(--t4), var(--s-avant), var(--l-avant)); 
     --couleur--footer:hsl(var(--t1), var(--s-avant), var(--l-avant));
 
     

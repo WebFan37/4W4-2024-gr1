@@ -16,14 +16,11 @@ Text Domain: theme for cute Janne
 :root {
   /*==================*/
   /* TEINTE COMPLÉMENTAIRE PARTAGÉ */
-  --u1: 82;
-  --u2: calc(var(--u1) + 180);
-  --u3: calc(var(--u2) - 30);
-  --u4: calc(var(--u2) + 30);
   /* TEINTE TRIADE */
-  --t1: 163;
-  --t2: calcl(var(--t1) + 120);
-  --t3: calcl(var(--t1) - 120);
+  --t1: 220;
+  --t2: calc(var(--t1) + 120);
+  --t3: calc(var(--t1) - 120);
+  --t4: calc(var(--t1) + 60);
   /*==================*/
   /*SAturation*/
   --s--arriere: 70%;
@@ -40,7 +37,7 @@ Text Domain: theme for cute Janne
   --couleur--entete:hsl(var(--t1), var(--s-avant), var(--l-avant));
   --couleur--accueil:hsl(var(--t2), var(--s-avant), var(--l-avant));
   --couleur--evenement:hsl(var(--t3), var(--s-avant), var(--l-avant));
-  --couleur--galerie: hsl(var(--u4), var(--s-avant), var(--l-avant));
+  --couleur--galerie: hsl(var(--t4), var(--s-avant), var(--l-avant));
   --couleur--footer:hsl(var(--t1), var(--s-avant), var(--l-avant));
   /*---couleur monochrome arriere plan****/
   /*couleur evenement setup pour le diagonal*/
