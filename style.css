@@ -30,9 +30,6 @@ Text Domain: theme for cute Janne
   --l-avant:80%;
   /* couleur arriere plan --background color--*/
   /***********************Couleur 180 degree*/
-  --couleur--arrier-entete:hsl(var(--t1), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-accueil:hsl(var(--t2), var(--s--arriere), var(--l-arriere));
-  --couleur--arrier-footer:hsl(var(--t1), var(--s--arriere), var(--l-arriere));
   /* couleur avant plan --color-- */
   --couleur--entete:hsl(var(--t1), var(--s-avant), var(--l-avant));
   --couleur--accueil:hsl(var(--t2), var(--s-avant), var(--l-avant));
@@ -40,6 +37,11 @@ Text Domain: theme for cute Janne
   --couleur--galerie: hsl(var(--t4), var(--s-avant), var(--l-avant));
   --couleur--footer:hsl(var(--t1), var(--s-avant), var(--l-avant));
   /*---couleur monochrome arriere plan****/
+  --couleur--arrier-entete:hsl(var(--t1), 100%, 30%);
+  --couleur--arrier-accueil:hsl(var(--t1), 100%, 60%);
+  --couleur--arrier-evenement:hsl(var(--t1), 100%, 10%);
+  --couleur--arrier-galerie: hsl(var(--t1), 100%, 40%);
+  --couleur--arrier-footer:hsl(var(--t1), 100%, 30%);
   /*couleur evenement setup pour le diagonal*/
   --couleur--arrier-evenement: var(--couleur--arrier-accueil);
   --couleur--arrier-galerie: var(--couleur--arrier-accueil);
@@ -98,6 +100,7 @@ button:hover {
 }
 
 #entete {
+  background-image: url("../images/Tilt-shift-3.jpg");
   background-color: var(--couleur--arrier-entete);
   color: var(--couleur--entete);
   position: relative;
