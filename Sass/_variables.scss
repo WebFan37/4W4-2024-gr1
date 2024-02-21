@@ -1,21 +1,16 @@
 :root {
-   /* --couleur--arrier-entete:#94d4f8;
-    --couleur--arrier-accueil:rgb(170, 238, 170);
-    --couleur--arrier-evenement:rgb(94, 215, 255);
-    --couleur--arrier-galerie:rgb(220, 205, 255);
-    --couleur--arrier-footer:rgb(250, 226, 146);
-
-    --transparence--section: 0.2;
-    --transparence--h1:0.4;
-    */
-
-    /*=== 2nd option====*/
     /*==================*/
-    /* Teinte*/
+    /* TEINTE COMPLÉMENTAIRE PARTAGÉ */
     --u1: 82; //couleur inititale
     --u2: calc(var(--u1) + 180); //couleur complementaire
     --u3: calc(var(--u2) - 30); //couleur analogue gauche
     --u4: calc(var(--u2) + 30); //couleur analogue droite
+
+    /* TEINTE TRIADE */
+    --t1: 30;
+    --t2: calcl(var(--t1) + 120);
+    --t3: calcl(var(--t1) - 120);
+    
 
     /*SAturation*/
     --s--arriere: 70%;
