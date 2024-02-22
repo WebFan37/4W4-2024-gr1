@@ -74,9 +74,13 @@ a:hover {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 800px;
+  flex: 0 1 1100px;
   padding: 3rem 1rem;
   border-radius: 15px;
+}
+
+.global > header {
+  flex: 1;
 }
 
 button {
@@ -92,6 +96,7 @@ button {
 
 button:hover {
   background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
+  color: rgb(145, 102, 149);
 }
 
 #entete, #footer {
@@ -130,6 +135,18 @@ button:hover {
   background-color: var(--couleur--arrier-footer);
   color: var(--couleur--footer);
   position: relative;
+}
+
+.entete_header {
+  background-image: url("images/Tilt-shift-3.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.footer_header {
+  background-image: url("images/wordpress-theme.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 p {

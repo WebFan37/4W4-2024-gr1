@@ -21,11 +21,14 @@ a:hover{
 .global > section,
 .global > header,
 .global > footer{
-    flex: 0 1 800px;
+    flex: 0 1 1100px;
     // border: 1px solid grey;
     padding: 3rem 1rem;
     // background-color: rgba(62, 153, 161, 0.25);
     border-radius: 15px;
+}
+.global > header{
+    flex: 1;
 }
 button{
     position: absolute;
@@ -40,6 +43,7 @@ button{
 }
 button:hover{
     background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
+    color: rgb(145, 102, 149);
 }
 // button:active{
 //     background: linear-gradient(to right yellow, green);
