@@ -187,11 +187,13 @@ button:hover {
 }
 
 a {
+  background-color: var(--couleur--arrier-footer);
   color: yellow;
 }
 
 a:hover {
-  color: rgb(160, 193, 250);
+  color: rgb(255, 255, 255);
+  background-color: var(--couleur--arrier-diagonal);
 }
 
 .vague {
