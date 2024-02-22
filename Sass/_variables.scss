@@ -2,7 +2,7 @@
     /*==================*/
 
     /* TEINTE TECHNIQUE TRIADE */
-    --t1: 220;
+    --t1: 273;
     --t2: calc(var(--t1) + 120);
     --t3: calc(var(--t1) - 120);
     --t4: calc(var(--t1) + 60);
@@ -28,10 +28,10 @@
     
 
     /*---couleur monochrome arriere plan****/
-    --couleur--arrier-entete:hsl(var(--t1), 100%, 30%);
-    --couleur--arrier-accueil:hsl(var(--t1), 100%, 60%);
-    --couleur--arrier-diagonal: hsl(var(--t1), 100%, 70%);
-    --couleur--arrier-footer:hsl(var(--t1), 100%, 30%);
+    --couleur--arrier-entete:hsl(var(--t1), var(--s--arriere), 30%);
+    --couleur--arrier-accueil:hsl(var(--t1), var(--s--arriere), 60%);
+    --couleur--arrier-diagonal: hsl(var(--t1), var(--s--arriere), 70%);
+    --couleur--arrier-footer:hsl(var(--t1), var(--s--arriere), 30%);
 
     
 

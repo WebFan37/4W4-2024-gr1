@@ -15,7 +15,7 @@ Text Domain: theme for cute Janne
 :root {
   /*==================*/
   /* TEINTE TECHNIQUE TRIADE */
-  --t1: 220;
+  --t1: 273;
   --t2: calc(var(--t1) + 120);
   --t3: calc(var(--t1) - 120);
   --t4: calc(var(--t1) + 60);
@@ -33,10 +33,10 @@ Text Domain: theme for cute Janne
   --couleur--galerie: hsl(var(--t4), var(--s-avant), var(--l-avant));
   --couleur--footer:hsl(var(--t1), var(--s-avant), var(--l-avant));
   /*---couleur monochrome arriere plan****/
-  --couleur--arrier-entete:hsl(var(--t1), 100%, 30%);
-  --couleur--arrier-accueil:hsl(var(--t1), 100%, 60%);
-  --couleur--arrier-diagonal: hsl(var(--t1), 100%, 70%);
-  --couleur--arrier-footer:hsl(var(--t1), 100%, 30%);
+  --couleur--arrier-entete:hsl(var(--t1), var(--s--arriere), 30%);
+  --couleur--arrier-accueil:hsl(var(--t1), var(--s--arriere), 60%);
+  --couleur--arrier-diagonal: hsl(var(--t1), var(--s--arriere), 70%);
+  --couleur--arrier-footer:hsl(var(--t1), var(--s--arriere), 30%);
   /*couleur evenement setup pour le diagonal*/
   --couleur--arrier-evenement: var(--couleur--arrier-accueil);
   --couleur--arrier-galerie: var(--couleur--arrier-accueil);
@@ -179,11 +179,13 @@ button {
   bottom: 0;
   background: linear-gradient(to right, rgb(255, 255, 187), rgb(136, 210, 213));
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 button:hover {
   background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
   color: rgb(48, 102, 183);
+  transform: translateY(-10px);
 }
 
 a {
