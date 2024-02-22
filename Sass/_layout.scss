@@ -30,24 +30,7 @@ a:hover{
 .global > header{
     flex: 1;
 }
-button{
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    // background-image:url("../images/LONELY-BOAT.jpg");
-    background: linear-gradient(to right, rgb(255, 255, 187), rgb(136, 210, 213));
-    object-fit: cover;
-    width: 13rem;
-    height: 3rem;
-    border-radius: 10px;
-}
-button:hover{
-    background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
-    color: rgb(145, 102, 149);
-}
-// button:active{
-//     background: linear-gradient(to right yellow, green);
-// }
+
 #entete, #footer{
     min-height: 10vh;
 }

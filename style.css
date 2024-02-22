@@ -83,22 +83,6 @@ a:hover {
   flex: 1;
 }
 
-button {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  background: linear-gradient(to right, rgb(255, 255, 187), rgb(136, 210, 213));
-  object-fit: cover;
-  width: 13rem;
-  height: 3rem;
-  border-radius: 10px;
-}
-
-button:hover {
-  background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
-  color: rgb(145, 102, 149);
-}
-
 #entete, #footer {
   min-height: 10vh;
 }
@@ -197,6 +181,21 @@ h6 {
   font-family: "Nunito", sans-serif;
   font-family: "Work Sans", sans-serif;
   color: rgb(255, 0, 255, var(--transparence--section));
+}
+
+button {
+  font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
+  padding: 12px 24px;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  background: linear-gradient(to right, rgb(255, 255, 187), rgb(136, 210, 213));
+  border-radius: 10px;
+}
+
+button:hover {
+  background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
+  color: rgb(48, 102, 183);
 }
 
 .vague {
