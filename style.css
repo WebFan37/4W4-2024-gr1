@@ -83,17 +83,15 @@ button {
   position: absolute;
   bottom: 0;
   right: 50%;
-  background-image: url("../images/LONELY-BOAT.jpg");
+  background: linear-gradient(to right, rgb(255, 255, 187), rgb(136, 210, 213));
   object-fit: cover;
-  color: rgb(255, 255, 255);
-  width: 15rem;
-  height: 5rem;
+  width: 13rem;
+  height: 3rem;
   border-radius: 10px;
 }
 
 button:hover {
-  background: linear-gradient(green, blue);
-  color: var(--couleur--arrier-galerie);
+  background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
 }
 
 #entete, #footer {
@@ -101,7 +99,6 @@ button:hover {
 }
 
 #entete {
-  background-image: url("../images/Tilt-shift-3.jpg");
   background-color: var(--couleur--arrier-entete);
   color: var(--couleur--entete);
   position: relative;
