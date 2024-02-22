@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/ */
 /*
 Theme Name: Theme for cute Janne
@@ -15,8 +14,7 @@ Text Domain: theme for cute Janne
 */
 :root {
   /*==================*/
-  /* TEINTE COMPLÉMENTAIRE PARTAGÉ */
-  /* TEINTE TRIADE */
+  /* TEINTE TECHNIQUE TRIADE */
   --t1: 220;
   --t2: calc(var(--t1) + 120);
   --t3: calc(var(--t1) - 120);
@@ -28,8 +26,6 @@ Text Domain: theme for cute Janne
   /*luminosite*/
   --l-arriere:30%;
   --l-avant:80%;
-  /* couleur arriere plan --background color--*/
-  /***********************Couleur 180 degree*/
   /* couleur avant plan --color-- */
   --couleur--entete:hsl(var(--t1), var(--s-avant), var(--l-avant));
   --couleur--accueil:hsl(var(--t2), var(--s-avant), var(--l-avant));
@@ -39,8 +35,7 @@ Text Domain: theme for cute Janne
   /*---couleur monochrome arriere plan****/
   --couleur--arrier-entete:hsl(var(--t1), 100%, 30%);
   --couleur--arrier-accueil:hsl(var(--t1), 100%, 60%);
-  --couleur--arrier-evenement:hsl(var(--t1), 100%, 10%);
-  --couleur--arrier-galerie: hsl(var(--t1), 100%, 40%);
+  --couleur--arrier-diagonal: hsl(var(--t1), 100%, 70%);
   --couleur--arrier-footer:hsl(var(--t1), 100%, 30%);
   /*couleur evenement setup pour le diagonal*/
   --couleur--arrier-evenement: var(--couleur--arrier-accueil);
@@ -63,18 +58,10 @@ body {
   min-height: 20vh;
 }
 
-a {
-  color: yellow;
-}
-
-a:hover {
-  color: rgb(160, 193, 250);
-}
-
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 1100px;
+  flex: 0 1 1200px;
   padding: 3rem 1rem;
   border-radius: 15px;
 }
@@ -88,9 +75,10 @@ a:hover {
 }
 
 #entete {
-  background-color: var(--couleur--arrier-entete);
+  background: linear-gradient(var(--couleur--arrier-accueil), var(--couleur--arrier-entete));
   color: var(--couleur--entete);
   position: relative;
+  min-height: 45vh;
 }
 
 #accueil {
@@ -122,9 +110,9 @@ a:hover {
 }
 
 .entete_header {
-  background-image: url("images/Tilt-shift-3.jpg");
+  background-image: url("images/node_js.png");
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-position: right;
 }
 
 .footer_header {
@@ -187,8 +175,8 @@ button {
   font-size: clamp(1.125rem, 0.5rem + 2vw, 1.875rem);
   padding: 12px 24px;
   position: absolute;
-  bottom: 50%;
-  right: 50%;
+  left: 20%;
+  bottom: 0;
   background: linear-gradient(to right, rgb(255, 255, 187), rgb(136, 210, 213));
   border-radius: 10px;
 }
@@ -196,6 +184,14 @@ button {
 button:hover {
   background: linear-gradient(rgb(194, 227, 194), rgb(95, 184, 211));
   color: rgb(48, 102, 183);
+}
+
+a {
+  color: yellow;
+}
+
+a:hover {
+  color: rgb(160, 193, 250);
 }
 
 .vague {
@@ -249,7 +245,7 @@ button:hover {
   position: absolute;
   content: "";
   inset: 0;
-  background-color: var(--couleur--arrier-entete);
+  background: linear-gradient(120deg, var(--couleur--arrier-diagonal), white);
   z-index: -1;
   transform: skewY(-4deg);
 }/*# sourceMappingURL=style.css.map */
