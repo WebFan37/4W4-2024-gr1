@@ -1,4 +1,4 @@
-# EXERCICE 1
+# LAB 03
 # GitHub Pages
 - https://webfan37.github.io/4W4-2024-gr1/
 
