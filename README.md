@@ -1,14 +1,14 @@
-## JANNE ZHANG ELLISON
-# LAB 03 
+# JANNE ZHANG ELLISON
+## LAB 03 
 - Il consiste à intégrer le page web dans WordPress via XAMPP et PHP
 
-# Progression
+## Progression
 
 
-# GitHub Pages
+## GitHub Pages
 - https://webfan37.github.io/4W4-2024-gr1/
 
-# Utilisation de la fonction HSL()
+## Utilisation de la fonction HSL()
 - https://blog.logrocket.com/using-hsl-colors-css/
 
 
