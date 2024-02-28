@@ -1,4 +1,5 @@
-# LAB 03
+## JANNE ZHANG ELLISON
+# LAB 03 
 - Il consiste à intégrer le page web dans WordPress via XAMPP et PHP
 
 # Progression
