@@ -1,5 +1,9 @@
 # LAB 03
 - Il consiste à intégrer le page web dans WordPress via XAMPP et PHP
+
+# Progression
+
+
 # GitHub Pages
 - https://webfan37.github.io/4W4-2024-gr1/
 
