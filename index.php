@@ -39,7 +39,7 @@
                 <h3><?php echo $titre ?></h3>
                 <p><?php echo $sigle ?></p>
                 <p><?php echo $duree ?></p>
-                <p><?php echo wp_trim_words(get_the_content(),20); ?></p>             
+                <p><?php echo wp_trim_words(get_the_content(),30); ?></p>             
             </div> 
         
             <?php endwhile ?>
